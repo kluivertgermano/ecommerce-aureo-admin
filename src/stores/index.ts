@@ -1,3 +1,5 @@
 export {default as useStoreTransacoes} from './useStoreTransacoes' 
 export {default as useStorePeriodos} from './useStorePeriodos' 
 export {default as useStoreReferencias} from './useStoreReferencias' 
+export {default as useStoreEntidade} from './useStoreEntidade' 
+export {default as useStoreEntidadeAllData} from './useStoreEntidadeAllData'

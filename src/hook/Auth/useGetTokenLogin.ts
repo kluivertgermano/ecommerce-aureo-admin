@@ -1,6 +1,6 @@
 import {SessionCookie} from '../../config'
 
-const getCookie = function(cname:string = SessionCookie.CLIENT){
+const getCookie = function(cname:string = SessionCookie.ENTERPRISE){
 
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);

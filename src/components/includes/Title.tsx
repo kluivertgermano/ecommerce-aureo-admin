@@ -1,14 +1,15 @@
-import {Flex, Heading, Text } from '@chakra-ui/react'
+import {Box, Flex, Heading, Text } from '@chakra-ui/react'
 import {COLORS} from '../../helpers'
 import type {TitlePage} from '../../types/components'
 
-function Title({title}:TitlePage) {
+function Title({title, description}:TitlePage) {
 
   return (
 
-    <Flex border={`1px solid ${COLORS.bg.cinzaBorda}`} px={[5,40]} py={[0,5]} bg={COLORS.bg.cinzaPage}>
-            <Heading textTransform={"uppercase"} fontWeight={500}>{title}</Heading>
-    </Flex>
+        <Box alignItems="center">
+            <Heading size="4xl">{title}</Heading>
+            <Text width={[400]} color={COLORS.cinza}>{description}</Text>
+        </Box>
 
   )
 }

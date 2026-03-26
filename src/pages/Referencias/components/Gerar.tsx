@@ -13,7 +13,7 @@ const fileTypes = ["CSV", "JSON", "XLS"];
 
 const Editar = () => {
   const [open, setOpen] = useState(false)
-  const [load, setLoad] = useState(false)
+  const [load, setLoad] = useState(false) 
   
   const refGenerate = useRef<any>(null);
 
@@ -118,11 +118,11 @@ const Editar = () => {
         <Drawer.Backdrop />
         <Drawer.Positioner>
           <Drawer.Content>
-            <Drawer.Header bg={COLORS.preto} color={COLORS.bg.branco} borderBottom={`2px solid ${COLORS.amarelo}`} >
+            <Drawer.Header bg={COLORS.amarelo} color={COLORS.preto} borderBottom={`5px solid ${COLORS.vermelho}`} >
               <Drawer.Title fontWeight={300}>Gerar referências</Drawer.Title>
             </Drawer.Header>
             <Drawer.Body p={10}>
-              <Box mt={5} fontSize={16} fontWeight={300}>
+              <Box mt={5} fontSize={14} fontWeight={300}>
                 <form onSubmit={formik.handleSubmit} method="POST">
                   <Stack gap="4">
                     <Flex>

@@ -1,19 +1,22 @@
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { Box, Container, Flex} from '@chakra-ui/react'
 import {COLORS} from '../../helpers'
-import { Header, SideBar, Title } from '../../components/includes'
-import { Cards, Grafico, TabelaMensal, Transacao } from './components'
+import { Header, SideBar } from '../../components/includes'
+import { PainelCard, RecentesFacturas, RecentesTransacoes, SliderCarrossel} from './components'
 import { BaseInfo, RequestAPI } from '../../config'
 import type { ResponseSWR } from '../../types/responseAPI'
 import useSWR from 'swr'
+import { useStoreEntidadeAllData } from '../../stores'
 
 function Dashboard() {
+    
+     const {entidadeData} = useStoreEntidadeAllData()
 
     const fetcher = async (url:string) =>{
     const {data} = await RequestAPI.get(url)
         return data
     }
     
-    const { data, error, isLoading } : ResponseSWR = useSWR(`/dashboard/entidade/${BaseInfo.entidade}`, fetcher)
+    const { data, error, isLoading } : ResponseSWR = useSWR(`/dashboard/entidade/${entidadeData?.empresaId}`, fetcher)
 
   return (
     <Box bg={COLORS.bg.cinzaPage} minHeight="100vh">
@@ -22,16 +25,19 @@ function Dashboard() {
 
         <Flex>
             <SideBar/>
-            <Container mt={10} mb={5} width={["90%"]}>
+            <Container mb={5} width={["100%"]}>
 
-                <Title title="Dashboard" description="Tenha uma visão simplificada do que acontece em suas finanças"/>
-                <Cards datas={{data, error, isLoading}}/>
+                {/* <Title title="Dashboard" description="Tenha uma visão simplificada do que acontece em suas finanças"/> */}
+                <SliderCarrossel datas={{data, error, isLoading}}/>
+                <PainelCard datas={{data, error, isLoading}} />
+                <RecentesTransacoes datas={{data, error, isLoading}} />
+
+                {/* <Cards datas={{data, error, isLoading}}/>
                 <Flex mt={5}>
                     <Grafico datas={{data, error, isLoading}}/>
                     <TabelaMensal datas={{data, error, isLoading}}/>
-                </Flex>    
-                      
-                <Transacao datas={{data, error, isLoading}}/>
+                </Flex> 
+                <Transacao datas={{data, error, isLoading}}/> */}
             </Container>
         </Flex>
     </Box>

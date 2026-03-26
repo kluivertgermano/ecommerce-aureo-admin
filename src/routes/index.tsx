@@ -1,99 +1,98 @@
 import {createBrowserRouter} from "react-router";
 
-import {Cadastro, Carrinho, CheckoutDetalhes, CheckoutEntrega, CheckoutMetodoPagamento, CheckoutReview, Contacto, ContaDetalhes, ContaEnderecos, ContaMetodoPagamento, ContaPainel, ContaPedidos, ContaSenha, ERR0404, EsqueceuSenha, EsqueceuSenhaAlterarSenha, EsqueceuSenhaPIN, FinalizadaCompra, Home, Login, Produtos, ProdutosDetalhes, Sobre,} from "../pages"
+import {Login, Dashboard, Pedidos, Erro404, Produtos, Facturas, Movimentos, Inscricao, RecuperarSenha, CodigoConfirmacao, StatusConfirmacaoSenha, MFA, UploadIdentificacao, RecuperacaoSenhaNova, MudarSenhaActual, Configuracoes, Relatorios, SuportePosVenda, FAQ, Actividades, Clientes, Expedicao, Integracao, Microservicos, Permissoes, Sessoes, Usuarios, Analise, API} from "../pages"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/login",
     element: <Login/>,
-  },
-  {
-    path: "/esqueceu-senha",
-    element: <EsqueceuSenha/>,
-  },
-  {
-    path: "/esqueceu-senha-pin",
-    element: <EsqueceuSenhaPIN/>,
-  },
-  {
-    path: "/esqueceu-senha-alterar-senha",
-    element: <EsqueceuSenhaAlterarSenha/>,
-  },
-  {
-    path: "/cadastro",
-    element: <Cadastro/>,
-  },
-  {
-    path: "/conta-painel",
-    element: <ContaPainel/>,
-  },
-  {
-    path: "/conta-pedidos",
-    element: <ContaPedidos/>,
-  },
-  {
-    path: "/conta-enderecos",
-    element: <ContaEnderecos/>,
-  },
-  {
-    path: "/conta-metodos-pagamento",
-    element: <ContaMetodoPagamento/>,
-  },
-  {
-    path: "/conta-detalhes",
-    element: <ContaDetalhes/>,
-  },
-  {
-    path: "/conta-senha",
-    element: <ContaSenha/>,
-  },
-  {
-    path: "/sobre",
-    element: <Sobre/>,
-  },
-  {
-    path: "/contacto",
-    element: <Contacto/>,
-  },
-  {
-    path: "/loja",
+  },{
+    path: "/mfa-login",
+    element: <MFA/>,
+  },{
+    path: "/mudar-senha-actual",
+    element: <MudarSenhaActual/>,
+  },{
+    path: "/inscricao",
+    element: <Inscricao/>,
+  },{
+    path: "/upload-documentacao",
+    element: <UploadIdentificacao/>,
+  },{
+    path: "/recuperar-senha",
+    element: <RecuperarSenha/>,
+  },{
+    path: "/codigo-confirmacao",
+    element: <CodigoConfirmacao/>,
+  },{
+    path: "/senha-nova-recuperacao",
+    element: <RecuperacaoSenhaNova/>,
+  },{
+    path: "/status-confirmacao",
+    element: <StatusConfirmacaoSenha/>,
+  },{
+    path: "/dashboard",
+    element: <Dashboard/>,
+  },{
+    path: "/pedidos",
+    element: <Pedidos/>,
+  },{
+    path: "/produtos",
     element: <Produtos/>,
-  },
-  {
-    path: "/loja/:produto",
-    element: <ProdutosDetalhes/>,
-  },
-  {
-    path: "/carrinho",
-    element: <Carrinho/>,
-  },
-  {
-    path: "/checkout-detalhes",
-    element: <CheckoutDetalhes/>,
-  },
-  {
-    path: "/checkout-entregas",
-    element: <CheckoutEntrega/>,
-  },
-  {
-    path: "/checkout-pagamento",
-    element: <CheckoutMetodoPagamento />
-  },
-  {
-    path: "/checkout-review",
-    element: <CheckoutReview/>
-  },
-  {
-    path: "/finalizar-compra",
-    element: <FinalizadaCompra/>
-  },
-  {
+  },{
+    path: "/analise",
+    element: <Analise/>,
+  },{
+    path: "/suporte",
+    element: <SuportePosVenda/>,
+  },{
+    path: "/relatorios",
+    element: <Relatorios/>,
+  },{
+    path: "/facturas",
+    element: <Facturas/>,
+  },{
+    path: "/movimentos",
+    element: <Movimentos/>,
+  },{
+    path: "/configuracoes",
+    element: <Configuracoes/>,
+  },{
+    path: "/actividades",
+    element: <Actividades/>,
+  },{
+    path: "/clientes",
+    element: <Clientes/>,
+  },{
+    path: "/entrega",
+    element: <Expedicao/>,
+  },{
+    path: "/integracoes",
+    element: <Integracao/>,
+  },{
+    path: "/microservicos",
+    element: <Microservicos/>,
+  },{
+    path: "/acessos",
+    element: <Permissoes/>,
+  },{
+    path: "/sessoes",
+    element: <Sessoes/>,
+  },{
+    path: "/usuarios",
+    element: <Usuarios/>,
+  },{
+    path: "/api",
+    element: <API/>,
+  },{
+    path: "/configuracoes",
+    element: <Configuracoes/>,
+  },{
+    path: "/ajuda",
+    element: <FAQ/>,
+  },{
     path: "*",
-    element: <ERR0404/>,
+    element: <Erro404 />
   }
 ]);
 

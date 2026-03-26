@@ -1,0 +1,7 @@
+export {default as Detalhes} from './Detalhes'
+export {default as Exclusao} from './Exclusao'
+export {default as Editar} from './Editar'
+export {default as Gerar} from './Gerar'
+export {default as Pagar} from './Pagar'
+export {default as Pesquisar} from './Pesquisar'
+export {default as Relatorios} from './Relatorios'

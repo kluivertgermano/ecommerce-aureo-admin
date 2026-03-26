@@ -1,5 +1,6 @@
 export type TitlePage = {
     title: string;
+    description: string;
 }
 
 export type Alerta = {

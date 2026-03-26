@@ -1,7 +1,5 @@
 export {default as Header} from "./Header"
-export {default as HearderAlt} from "./HearderAlt"
 export {default as SideBar} from "./SideBar"
 export {default as Title} from "./Title"
 export {default as Paginations} from "./Pagination"
-export {default as MenuMobile} from "./MenuMobile"
-export {default as ButtonFloating} from "./ButtonFloating"
+export {default as DialogConfirm} from "./DialogConfirm"

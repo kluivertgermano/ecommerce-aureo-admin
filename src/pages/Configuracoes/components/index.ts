@@ -1,0 +1,6 @@
+export {default as Detalhes} from './Detalhes'
+export {default as Pesquisar} from './Pesquisar'
+export {default as Relatorios} from './Relatorios'
+export {default as MinhaConta} from './MinhaConta'
+export {default as MudarSenhaActual} from './MudarSenhaActual'
+export {default as DadosPessoais} from './DadosPessoais'

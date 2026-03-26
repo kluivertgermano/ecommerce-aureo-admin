@@ -1,6 +1,6 @@
 import {SessionCookie} from '../../config'
 
-const saveCookie = function(cname:string = SessionCookie.CLIENT, cvalue:string, exdays:number){
+const saveCookie = function(cvalue:string, exdays:number, cname:string = SessionCookie.ENTERPRISE){
     
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));

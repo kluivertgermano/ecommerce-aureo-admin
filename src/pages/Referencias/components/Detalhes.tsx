@@ -42,12 +42,12 @@ const Detalhes = ({data}:ANY) => {
         <Drawer.Backdrop />
         <Drawer.Positioner>
           <Drawer.Content>
-            <Drawer.Header bg={COLORS.preto} color={COLORS.bg.branco} borderBottom={`2px solid ${COLORS.amarelo}`}>
+            <Drawer.Header bg={COLORS.amarelo} color={COLORS.preto} borderBottom={`5px solid ${COLORS.vermelho}`}>
               <Drawer.Title fontWeight={300}>Mais Detalhes</Drawer.Title>
             </Drawer.Header>
             <Drawer.Body>
               <Heading mt={3}># {data.num_referencia}</Heading>
-              <Box mt={5} fontSize={16} fontWeight={300}>
+              <Box mt={5} fontSize={14} fontWeight={300}>
                 <Flex mb={5} justifyContent="space-between">
                   <Text>Estado</Text>
                   <Text fontWeight={700}>{changeTextForImage(data.estado_atm)}</Text>

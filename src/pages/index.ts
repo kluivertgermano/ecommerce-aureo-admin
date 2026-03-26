@@ -1,26 +1,74 @@
 /* AUTENTICAÇÃO */
-export {default as Cadastro} from './Cadastro'
-export {default as Login} from './Login'
-export {default as EsqueceuSenha} from './EsqueceuSenha'
-export {default as EsqueceuSenhaPIN} from './EsqueceuSenhaPIN'
-export {default as EsqueceuSenhaAlterarSenha} from './EsqueceuSenhaAlterarSenha'
-export {default as ContaPainel} from './ContaPainel'
-export {default as ContaPedidos} from './ContaPedidos'
-export {default as ContaEnderecos} from './ContaEnderecos'
-export {default as ContaMetodoPagamento} from './ContaMetodoPagamento'
-export {default as ContaDetalhes} from './ContaDetalhes'
-export {default as ContaSenha} from './ContaSenha'
-export {default as Home} from './Home'
-export {default as Sobre} from './Sobre'
-export {default as Contacto} from './Contacto'
-export {default as Suporte} from './Suporte'
-export {default as SobreNos} from './SobreNos'
+export {default as AreaPrivada} from './Autenticacao/AreaPrivada'
+export {default as Login} from './Autenticacao/Login'
+export {default as MFA} from './Autenticacao/MFA'
+export {default as MudarSenhaActual} from './Autenticacao/MudarSenhaActual'
+export {default as Inscricao} from './Autenticacao/Inscricao'
+export {default as UploadIdentificacao} from './Autenticacao/UploadIdentificacao'
+export {default as RecuperarSenha} from './Autenticacao/RecuperarSenha'
+export {default as CodigoConfirmacao} from './Autenticacao/CodigoConfirmacao'
+export {default as RecuperacaoSenhaNova} from './Autenticacao/RecuperacaoSenhaNova'
+export {default as StatusConfirmacaoSenha} from './Autenticacao/StatusConfirmacaoSenha'
+
+/* DASHBOARD */
+export {default as Dashboard} from './Dashboard'
+
+/* TRANSAÇÕES */
+export {default as Pedidos} from './Pedidos'
+
+/* PRODUTOS */
 export {default as Produtos} from './Produtos'
-export {default as ProdutosDetalhes} from './ProdutosDetalhes'
-export {default as Carrinho} from './Carrinho'
-export {default as CheckoutDetalhes} from './CheckoutDetalhes'
-export {default as CheckoutEntrega} from './CheckoutEntrega'
-export {default as CheckoutMetodoPagamento} from './CheckoutMetodoPagamento'
-export {default as CheckoutReview} from './CheckoutReview'
-export {default as FinalizadaCompra} from './FinalizadaCompra'
-export {default as ERR0404} from './ERROS'
+
+/* FACTURAS */
+export {default as Facturas} from './Facturas'
+
+/* RELATORIOS */
+export {default as Relatorios} from './Relatorios'
+
+/* SUPORTE POS VENDA */
+export {default as SuportePosVenda} from './SuportePosVenda'
+
+/* MOVIMENTOS */
+export {default as Movimentos} from './Movimentos'
+
+/* CONFIGS */
+export {default as Configuracoes} from './Configuracoes'
+
+/* ACTIVIDADES */
+export {default as Actividades} from './Actividades'
+
+/* ANALISE */
+export {default as Analise} from './Analise'
+
+/* EXPEDICAO */
+export {default as Expedicao} from './Expedicao'
+
+/* INTEGRACAO */
+export {default as Integracao} from './Integracao'
+
+/* PERMISSOES */
+export {default as Permissoes} from './Permissoes'
+
+/* REFERENCIAS */
+export {default as Referencias} from './Referencias'
+
+/* SUPORTE POS VENDA */
+export {default as Sessoes} from './Sessoes'
+
+/* USUARIOS */
+export {default as Usuarios} from './Usuarios'
+
+/* FAQ */
+export {default as FAQ} from './FAQ'
+
+/* API */
+export {default as API} from './API'
+
+/* CLIENTES */
+export {default as Clientes} from './Clientes'
+
+/* CLIENTES */
+export {default as Microservicos} from './Microservicos'
+
+/* ERROS */
+export {default as Erro404} from './Erros/404'

@@ -4,8 +4,8 @@ import { Alerta } from '../../../components/status'
 import MULTICAIXA_EXPRESS from '../../../assets/images/Icones/EXPRESS.png'
 import MULTICAIXA from '../../../assets/images/Icones/MULTICAIXA.png'
 import INTERNET_BANK from '../../../assets/images/Icones/BANK.png'
-import { Detalhes } from '../../Transacoes/components'
-import { Detalhes as Datails } from '../../Periodos/components'
+import { Detalhes } from '../../Pedidos/components'
+import { Detalhes as Datails } from '../../Produtos/components'
 import type { ResponseSWR } from '../../../types/responseAPI'
 
 
